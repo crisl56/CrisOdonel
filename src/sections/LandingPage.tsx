@@ -1,0 +1,16 @@
+
+
+
+export default function LandingPage() {
+    return (
+        <>
+            <h1>Cris Laurence Odonel</h1>
+            <div className="Contacts">
+                <ul></ul>
+                <ul>Email: </ul>
+                <ul>Phone:</ul>
+            </div>
+        </>
+    )
+}
+
