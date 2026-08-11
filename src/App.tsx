@@ -1,5 +1,5 @@
 import './styles/App.css';
-import Portfolio from './sections/Portfolio.tsx';
+import Portfolio from './sections/Portfolio/Portfolio.tsx';
 import Navbar from './components/Navbar/Navbar.tsx';
 import { Route, Routes } from "react-router-dom";
 

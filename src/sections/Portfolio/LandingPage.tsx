@@ -7,6 +7,7 @@ export default function LandingPage() {
                 <ul>Email: </ul>
                 <ul>Phone:</ul>
             </div>
+            <p>Beetleball</p>
         </>
     )
 }
