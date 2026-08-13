@@ -8,7 +8,7 @@ export default function Navbar(){
     return(
         <nav className={styles.navbbar}>
             <a href="/" className={styles.logo}>
-                Logo
+                Cris Odonel
             </a>
             <div className={styles.menuIcon} onClick={()=>setMenuOpen(!menuOpen)}>
                 {/*TODO: Icon of menu here or svg element*/}
