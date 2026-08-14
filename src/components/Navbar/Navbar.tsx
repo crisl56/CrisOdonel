@@ -38,15 +38,11 @@ export default function Navbar(){
                         Projects
                     </NavLink>
                 </li>
-                <li>
-                    <NavLink to="/Experience"
-                     className={({isActive}) => (isActive ? styles.activeLink : "")}>
-                        Experience
-                    </NavLink>
-                </li>
+
             </ul>
             <div className={styles.navButtons}>
                 {/*TODO: Experiment if this should be a link to the bottom instead*/}
+                {/*Should download resume or travel to contacts*/}
                 <button className={styles.hireBtn}>Hire Me</button>
             </div>
         </nav>
