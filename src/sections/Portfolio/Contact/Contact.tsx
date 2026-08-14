@@ -7,6 +7,7 @@ export default function Contact() {
                 <h2>Cris Laurence Odonel</h2>
                 <ul>
                     <li>LinkedIn</li>
+                    <li>GitHub</li>
                     <li>crislaurenceodonel@gmail.com</li>
                     <li>(+1) 431-337-1111</li>
                 </ul>
