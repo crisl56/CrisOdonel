@@ -9,7 +9,7 @@ export default function App() {
       <>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Portfolio/> } />
+          <Route path="/CrisOdonel/" element={<Portfolio/> } />
         </Routes>
       </>
   )
