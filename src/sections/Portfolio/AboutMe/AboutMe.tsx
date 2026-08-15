@@ -2,10 +2,10 @@ import {useEffect, useRef, useState} from "react";
 import styles from "./AboutMe.module.css";
 
 const aboutImages = [
-    "/about/me1.jpg",
-    "/about/me2.jpg",
-    "/about/me3.jpg",
-    "/about/me4.jpg",
+    "/CrisOdonel/about/me1.jpg",
+    "/CrisOdonel/about/me2.jpg",
+    "/CrisOdonel/about/me3.jpg",
+    "/CrisOdonel/about/me4.jpg",
 ]
 
 export default function AboutMe(){

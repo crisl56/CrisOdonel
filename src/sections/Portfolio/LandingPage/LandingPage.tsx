@@ -5,8 +5,8 @@ import { FiMail, FiPhone } from "react-icons/fi";
 const VIDEO_EXTENSIONS = [".mp4", ".webm", ".mov"];
 
 const projectMedia: string[] = [
-    "/projects/NekoFishTrailer.mp4",
-    "/projects/Tachyon_Trailer_Final01.mp4",
+    "/CrisOdonel/projects/NekoFishTrailer.mp4",
+    "/CrisOdonel/projects/Tachyon_Trailer_Final01.mp4",
 ];
 
 const isVideo = (src: string) =>
