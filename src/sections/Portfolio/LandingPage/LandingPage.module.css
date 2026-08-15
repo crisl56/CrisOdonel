@@ -25,23 +25,23 @@
     background-size: cover;
     background-position: center;
     object-fit: cover;
-    filter: blur(7px) saturate(0.85) brightness(0.55);
+    filter: blur(7px) saturate(0.85) brightness(0.65);
     transform: scale(1.08);
     opacity: 0;
-    animation: bgCrossfade 16s ease-in-out infinite;
+    animation: bgCrossfade 28s ease-in-out infinite;
 }
 
 @keyframes bgCrossfade {
     0% {
         opacity: 0;
     }
-    8% {
+    2% {
         opacity: 1;
     }
-    25% {
+    27% {
         opacity: 1;
     }
-    33% {
+    29% {
         opacity: 0;
     }
     100% {

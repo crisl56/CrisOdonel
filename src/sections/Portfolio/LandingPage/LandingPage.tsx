@@ -17,7 +17,7 @@ export default function LandingPage() {
         <section id="home" className={styles.landing}>
             <div className={styles.bgLayer} aria-hidden="true">
                 {projectMedia.map((src, i) => {
-                    const delay = `${i * (16 / projectMedia.length)}s`;
+                    const delay = `${i * (28 / projectMedia.length)}s`;
                     return isVideo(src) ? (
                         <video
                             key={src}
