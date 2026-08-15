@@ -1,10 +1,13 @@
 import type {IconType} from "react-icons";
+import styles from "./SkillsPrograms.module.css"
 
 import {
     SiCplusplus, SiSharp, SiJavascript, SiTypescript, SiReact, SiGit,
     SiUnity, SiUnrealengine, SiGithub, SiRider
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
+
+import {useEffect, useRef, useState} from "react";
 
 interface Skill {
     name: string;
@@ -29,34 +32,59 @@ const programs: Skill[] = [
 ]
 
 export default function SkillsPrograms() {
+    const [isVisible, setIsVisible] = useState(false);
+    const sectionRef = useRef<HTMLElement>(null);
+
+    useEffect(() => {
+        const node = sectionRef.current;
+        if (!node) return;
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                    observer.unobserve(node);
+                }
+            },
+            { threshold: 0.2 }
+        );
+
+        observer.observe(node);
+        return () => observer.disconnect();
+    }, []);
+
 
     return(
-        <section id="skills">
-            <h1>Skills & Programs</h1>
+        <section
+            id="skills"
+            ref={sectionRef}
+            className={`${styles.skills} ${isVisible ? styles.visible : ''}`}
+        >
+            <h1 className={styles.heading}>Skills & Programs</h1>
 
-            <section>
-                <h2>Skills</h2>
-                <div>
-                    {skills.map((Skill) => (
-                        <div key={Skill.name}>
-                            <Skill.icon size={40}/>
-                            <p>{Skill.name}</p>
+            <div className={styles.group}>
+                <h2 className={styles.groupLabel}>Skills</h2>
+                <div className={styles.row}>
+                    {skills.map((skill) => (
+                        <div key={skill.name} className={styles.item}>
+                            <skill.icon size={40} className={styles.icon} />
+                            <p className={styles.itemLabel}>{skill.name}</p>
                         </div>
                     ))}
                 </div>
-            </section>
+            </div>
 
-            <section>
-                <h2>Programs</h2>
-                <div>
-                    {programs.map((Skill) => (
-                        <div key={Skill.name}>
-                            <Skill.icon size={40}/>
-                            <p>{Skill.name}</p>
+            <div className={styles.group}>
+                <h2 className={styles.groupLabel}>Programs</h2>
+                <div className={styles.row}>
+                    {programs.map((program) => (
+                        <div key={program.name} className={styles.item}>
+                            <program.icon size={40} className={styles.icon} />
+                            <p className={styles.itemLabel}>{program.name}</p>
                         </div>
                     ))}
                 </div>
-            </section>
+            </div>
         </section>
     )
 }
