@@ -1,6 +1,13 @@
+import styles from "./LandingPage.module.css";
+
+const projectImages: string[] = [
+    "/projects/project-1.jpg",
+    "/projects/project-2.jpg",
+];
+
 export default function LandingPage() {
     return (
-        <section id="home">
+        <section id="home" className={styles.landing}>
             <h1 className={"LandingTitle"}>Cris Laurence Odonel</h1>
             <h2 className={"JobTitle"}>Software & Gameplay Programmer</h2>
             <ul>
@@ -10,6 +17,7 @@ export default function LandingPage() {
                 <li>(+1) 431-337-1111</li>
             </ul>
         </section>
+
     )
 }
 
