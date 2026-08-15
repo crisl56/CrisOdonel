@@ -1,49 +1,63 @@
 import {useState} from "react";
-import {NavLink} from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+import { FiMenu, FiX } from "react-icons/fi";
 import styles from "./Navbar.module.css";
+
+interface NavbarProps {
+    label: string;
+    to: string;
+}
+
+const navItems: NavbarProps[] = [
+    { label: "Home", to: "/#home" },
+    { label: "About", to: "/#about" },
+    { label: "Skills", to: "/#skills" },
+    { label: "Projects", to: "/#projects" },
+];
 
 export default function Navbar(){
     const [menuOpen, setMenuOpen] = useState(false);
 
+    const handleHireClick = () => {
+        document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+
+        const link = document.createElement("a");
+        link.href = "/CrisResume2026.pdf";
+        link.download ="CrisOdonel_Resume.pdf";
+        link.click();
+
+        setMenuOpen(false);
+    }
+
     return(
-        <nav className={styles.navbbar}>
+        <nav className={styles.navbar}>
             <a href="/" className={styles.logo}>
                 Cris Odonel
             </a>
-            <div className={styles.menuIcon} onClick={()=>setMenuOpen(!menuOpen)}>
-                {/*TODO: Icon of menu here or svg element*/}
-            </div>
-            <ul className={`$styles.navLinks ${menuOpen ? styles.active : ""}`}>
-                <li>
-                    <NavLink to="/"
-                    className={({isActive}) => (isActive ? styles.activeLink : "")}>
-                        Home
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to="/About"
-                     className={({isActive}) => (isActive ? styles.activeLink : "")}>
-                        About
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to="/Skills"
-                         className={({isActive}) => (isActive ? styles.activeLink : "")}>
-                        Skills
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to="/Projects"
-                     className={({isActive}) => (isActive ? styles.activeLink : "")}>
-                        Projects
-                    </NavLink>
-                </li>
 
+            <button
+                className={styles.menuIcon}
+                onClick={() => setMenuOpen(!menuOpen)}
+                aria-label="Toggle menu"
+                aria-expanded={menuOpen}
+            >
+                {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+            </button>
+
+            <ul className={`${styles.navLinks} ${menuOpen ? styles.active : ""}`}>
+                {navItems.map((NavbarProps) => (
+                    <li key={NavbarProps.label}>
+                        <HashLink smooth to={NavbarProps.to} onClick={() => setMenuOpen(false)}>
+                            {NavbarProps.label}
+                        </HashLink>
+                    </li>
+                ))}
             </ul>
+
             <div className={styles.navButtons}>
-                {/*TODO: Experiment if this should be a link to the bottom instead*/}
-                {/*Should download resume or travel to contacts*/}
-                <button className={styles.hireBtn}>Hire Me</button>
+                <button className={styles.hireBtn} onClick={handleHireClick}>
+                    Hire Me
+                </button>
             </div>
         </nav>
     )

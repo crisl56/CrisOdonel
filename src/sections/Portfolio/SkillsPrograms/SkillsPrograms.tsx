@@ -31,7 +31,7 @@ const programs: Skill[] = [
 export default function SkillsPrograms() {
 
     return(
-        <>
+        <section id="skills">
             <h1>Skills & Programs</h1>
 
             <section>
@@ -57,6 +57,6 @@ export default function SkillsPrograms() {
                     ))}
                 </div>
             </section>
-        </>
+        </section>
     )
 }
