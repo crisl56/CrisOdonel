@@ -5,8 +5,8 @@
     align-items: center;
     gap: 4rem;
     padding: 6rem 8vw;
-    background-color: #2C2C2C;
-    color: #FFFDF5;
+    background-color: #FFFDF5;
+    color: #2C2C2C;
 
     opacity: 0;
     transform: translateY(32px);
@@ -60,7 +60,7 @@
     font-weight: 700;
     font-size: clamp(2rem, 3.5vw, 2.75rem);
     margin: 0;
-    color: #FFFDF5;
+    color: #2C2C2C;
 }
 
 .name {
@@ -75,7 +75,7 @@
     font-family: 'Space Grotesk', sans-serif;
     font-size: 1.05rem;
     line-height: 1.6;
-    color: #FFFFFF;
+    color: #2C2C2C;
     margin: 0 0 0.75rem 0;
 }
 
