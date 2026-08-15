@@ -2,7 +2,7 @@
 export default function AboutMe(){
 
     return(
-        <>
+        <section id="about">
             <h1>About Me!</h1>
 
             {/*Image of self here onto side*/}
@@ -21,6 +21,6 @@ export default function AboutMe(){
                 <p>I am open to work remotely online.</p>
             </div>
 
-        </>
+        </section>
     )
 }
