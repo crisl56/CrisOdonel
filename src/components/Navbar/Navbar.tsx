@@ -32,7 +32,7 @@ export default function Navbar(){
 
     return(
         <nav className={styles.navbar}>
-            <a href="./CrisOdonel/" className={styles.logo}>
+            <a href="https://crisl56.github.io/CrisOdonel/" className={styles.logo}>
                 Cris Odonel
             </a>
 
