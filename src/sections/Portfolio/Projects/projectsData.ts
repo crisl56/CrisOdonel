@@ -42,7 +42,7 @@ export const projects: Project[] = [
         ],
         caseStudy: [
             {
-                heading: "PROBLEM",
+                heading: "PROBLEM 1",
                 body: [
                     "Clients had snappy movement and often rubber banded compared to the host of the game session. " +
                     "Instructors and playtesters all displayed frustration and displeasure from being a client. " +
@@ -97,7 +97,35 @@ export const projects: Project[] = [
         thumbnails: [
             "/CrisOdonel/caseStudies/gunch/thumbnails/GUNCHTitle.png",
         ],
-        caseStudy: [],
+        caseStudy: [
+            {
+                heading: "PROBLEM 1",
+                body: [
+                    "Playtesting revealed that players lacked sufficient feedback when taking damage or reaching critical health. " +
+                    "This lack of communication led to abrupt, confusing deaths, causing players to feel the combat was unfair and resulting in " +
+                    "high levels of frustration during encounters."
+                ]
+            },
+            {
+                heading: "DECISIONS",
+                body: [
+                    "I programmed a screen space red vignette that triggers and scales in intensity as the player's health drops. " +
+                    "This provided an immediate, peripheral warning system that players noticed much faster than the traditional UI health bar.",
+                    "I engineered a directional camera shake event triggered whenever the player takes damage from enemy AI. " +
+                    "This added immediate, tactile feedback to enemy attacks, alerting players to hits even from behind so " +
+                    "they could reposition accordingly."
+                ]
+            },
+            {
+                heading: "RESULTS",
+                body: [
+                    "The improved feedback loop significantly reduced player frustration. " +
+                    "Playtesters reported that deaths felt fair and easily understandable, and they demonstrated better situational " +
+                    "awareness and decision making when choosing to attack or heal. These technical additions provided the necessary " +
+                    "polish to make the game's high stakes combat feel intuitive and responsive."
+                ]
+            }
+        ],
         screenshots: [
             "/CrisOdonel/caseStudies/gunch/screenshots/gunchGameplay1.jpg",
             "/CrisOdonel/caseStudies/gunch/screenshots/GUNCHTitle.png",
@@ -123,9 +151,44 @@ export const projects: Project[] = [
         thumbnails: [
             "/CrisOdonel/caseStudies/nekofish/thumbnails/NekoFishPoster.png",
             "/CrisOdonel/caseStudies/nekofish/thumbnails/Nekofishtitle.png",
-            "/CrisOdonel/caseStudies/nekofish/thumbnails/NekoFishgameplay2.png",
+            "/CrisOdonel/caseStudies/nekofish/thumbnails/NekoFishGameplay2.png",
         ],
-        caseStudy: [],
+        caseStudy: [
+            {
+                heading: "PROBLEM 1",
+                body: [
+                    "Initial playtests revealed significant friction in the core gameplay loop. " +
+                    "Players struggled to understand the input sequence required to equip their rods and cast. " +
+                    "Additionally, the physics-based bobber frequently clipped into and became stuck in world geometry. " +
+                    "This combination of onboarding friction and physics bugs resulted in high player confusion and" +
+                    " prevented them from engaging with the primary mechanic.",
+                ]
+            },
+            {
+                heading: "DECISIONS",
+                body: [
+                    "I engineered a pre-tutorial scene to introduce the core inputs step by step, " +
+                    "rewarding players for successfully executing micro-tasks. To reinforce this, I implemented dynamic " +
+                    "UI text popups and custom animations to provide immediate, clear feedback when the fishing rod was" +
+                    " successfully equipped.",
+                    "To improve casting accuracy, I researched and applied kinematic physics formulas to calculate the" +
+                    " exact arc of the cast, rendering a dynamic prediction projectile line. This visual aid allowed players " +
+                    "to accurately target specific fish in the water.",
+                    "I systematically audited the bobber's physics interactions and implemented a C# reset mechanic. " +
+                    "By defining specific edge case parameters, the system automatically detects when a bobber is trapped " +
+                    "in geometry and resets it, preventing softlocks and allowing players to immediately recast."
+                ]
+            },
+            {
+                heading: "RESULTS",
+                body: [
+                    "These implementations completely transformed the fishing experience. " +
+                    "Players easily understood the mechanics and achieved a highly enjoyable " +
+                    "\"flow state\" during gameplay. Frustration levels plummeted, physics related bugs were eliminated, " +
+                    "and overall fishing success rates and engagement increased significantly."
+                ]
+            }
+        ],
         screenshots: [
             "/CrisOdonel/caseStudies/nekofish/screenshots/Nekofishtitle.png",
             "/CrisOdonel/caseStudies/nekofish/screenshots/NekoFishGameplay.png",
@@ -138,6 +201,7 @@ export const projects: Project[] = [
             "Find and catch the rarest fish of them all, the NekoFish!",
         duration: "6 Months",
         teamSize: "5 People",
+        videoUrl: "https://drive.google.com/file/d/1BLPOv7DABll4U_DE26oof-76gy-WklwE/view?usp=sharing",
         publishedLink:
             {
                 label: "Itch.io",
