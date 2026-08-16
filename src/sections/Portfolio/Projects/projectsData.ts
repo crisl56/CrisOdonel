@@ -33,12 +33,12 @@ export const projects: Project[] = [
     {
         id: "tachyon",
         name: "Tachyon",
-        role: "Gameplay & Network Engineer",
+        role: "Gameplay & Network Engineer | 2026",
         tags: ["C++", "Unreal", "Multiplayer", "Gameplay Systems"],
         thumbnails: [
+            "/CrisOdonel/caseStudies/tachyon/thumbnails/TachyonThumbnail.png",
             "/CrisOdonel/caseStudies/tachyon/thumbnails/Tachyon_Screenshot_01.png",
             "/CrisOdonel/caseStudies/tachyon/thumbnails/Tachyon_Screenshot_03.png",
-            "/CrisOdonel/caseStudies/tachyon/thumbnails/TachyonThumbnail.png",
         ],
         caseStudy: [
             {
@@ -92,7 +92,7 @@ export const projects: Project[] = [
     {
         id: "gunch",
         name: "GUNCH",
-        role: "Gameplay & UI Programmer",
+        role: "Gameplay & UI Programmer | 2026",
         tags: ["C#", "Unity", "Gameplay Systems", "UI"],
         thumbnails: [],
         caseStudy: [],
@@ -108,7 +108,7 @@ export const projects: Project[] = [
     {
         id: "nekofish",
         name: "NekoFish",
-        role: "Gameplay & UI Programmer",
+        role: "Gameplay & UI Programmer | 2025",
         tags: ["C#", "Unity", "Gameplay Systems", "UI"],
         thumbnails: [
             ""
