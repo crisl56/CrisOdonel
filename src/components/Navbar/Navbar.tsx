@@ -22,7 +22,7 @@ export default function Navbar(){
         document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
 
         const link = document.createElement("a");
-        link.href = "/CrisResume2026.pdf";
+        link.href = "/CrisOdonel/CrisResume2026.pdf";
         link.download ="CrisOdonel_Resume.pdf";
         link.click();
 
