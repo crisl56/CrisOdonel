@@ -45,7 +45,7 @@ npm install
 
 ```
 CrisOdonel/
-├── public/ # mainly static images (about photos, project 
+├── public/ # mainly static images (about photos, project)
 │   ├── about/
 │   ├── caseStudies/
 │   └── CrisResume2026.pdf
