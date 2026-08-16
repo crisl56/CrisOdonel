@@ -13,6 +13,7 @@ const navItems: NavbarProps[] = [
     { label: "About", to: "/#about" },
     { label: "Skills", to: "/#skills" },
     { label: "Projects", to: "/#projects" },
+    { label: "Contact", to: "/#contact" },
 ];
 
 export default function Navbar(){
@@ -31,7 +32,7 @@ export default function Navbar(){
 
     return(
         <nav className={styles.navbar}>
-            <a href="/" className={styles.logo}>
+            <a href="/#home" className={styles.logo}>
                 Cris Odonel
             </a>
 
@@ -56,7 +57,7 @@ export default function Navbar(){
 
             <div className={styles.navButtons}>
                 <button className={styles.hireBtn} onClick={handleHireClick}>
-                    Hire Me
+                    RÉSUMÉ
                 </button>
             </div>
         </nav>

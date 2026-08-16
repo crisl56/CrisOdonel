@@ -4,8 +4,8 @@
     align-items: center;
     text-align: center;
     padding: 6rem 8vw;
-    background-color: #2C2C2C;
-    color: #FFFDF5;
+    background-color: #FFFDF5;
+    color: #2C2C2C;
 
     opacity: 0;
     transform: translateY(32px);
@@ -15,6 +15,45 @@
 .contact.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+.ContactCardBlock {
+    position: relative;
+    background-color: #2C2C2C;
+    border: 5px solid #2C2C2C;
+    padding: 2rem 10rem;
+}
+
+.corner {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    margin: 0.8rem;
+    border-top: 2px solid #F4D35E;
+    border-right: 2px solid #F4D35E;
+}
+
+.corner:nth-of-type(1) {
+    top: 0;
+    right: 0;
+}
+
+.corner:nth-of-type(2) {
+    top: 0;
+    left: 0;
+    transform: rotate(-90deg);
+}
+
+.corner:nth-of-type(3) {
+    bottom: 0;
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.corner:nth-of-type(4) {
+    bottom: 0;
+    right: 0;
+    transform: rotate(90deg);
 }
 
 .heading {
@@ -32,7 +71,7 @@
 }
 
 .name {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Space Grotesk', sans-serif;
     font-weight: 500;
     font-size: 2.1rem;
     color: #F4D35E;
@@ -49,11 +88,12 @@
 }
 
 .listItem {
+    color: #FFFDF5;
     display: flex;
     align-items: center;
     gap: 0.75rem;
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 1rem;
+    font-size: 1.2rem;
     transition: color 0.25s ease;
 }
 
@@ -61,7 +101,7 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    color: inherit;
+    color: #FFFDF5;
     text-decoration: none;
 }
 
