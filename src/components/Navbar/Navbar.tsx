@@ -32,7 +32,7 @@ export default function Navbar(){
 
     return(
         <nav className={styles.navbar}>
-            <a href="./" className={styles.logo}>
+            <a href="./CrisOdonel/" className={styles.logo}>
                 Cris Odonel
             </a>
 
