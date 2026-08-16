@@ -56,6 +56,9 @@ CrisOdonel/
     │   ├── react.svg
     │   └── vite.svg
     ├── components/
+    │   └── Footer/
+    │   │   ├── Footer.module.css
+    │   │   └── Footer.tsx
     │   └── Navbar/
     │       ├── Navbar.module.css
     │       └── Navbar.tsx
