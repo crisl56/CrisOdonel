@@ -108,7 +108,12 @@ export const projects: Project[] = [
             "Because of your newfound abilities, the authorities are after your life, wanting it for themselves. " +
             "Escape the city while using your abilities of GUNCHING to beat your enemies and save your life.",
         duration: "2 Months",
-        teamSize: "5 People"
+        teamSize: "5 People",
+        publishedLink:
+            {
+                label: "Itch.io",
+                url: "https://fruitsaladsamurai.itch.io/gunch"
+            }
     },
     {
         id: "nekofish",
@@ -132,6 +137,11 @@ export const projects: Project[] = [
             "Acquire different rarities and experience many environments during your hunt. Interact and help various NPCs on the island for rewards and story. " +
             "Find and catch the rarest fish of them all, the NekoFish!",
         duration: "6 Months",
-        teamSize: "5 People"
+        teamSize: "5 People",
+        publishedLink:
+            {
+                label: "Itch.io",
+                url: "https://fruitsaladsamurai.itch.io/nekofish"
+            }
     }
 ]
