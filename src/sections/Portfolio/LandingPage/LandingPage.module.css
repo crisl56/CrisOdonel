@@ -5,8 +5,8 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background-color: #2c2c2c;
-    color: #fffdf5;
+    background-color: #2C2C2C;
+    color: #FFFDF5;
 }
 
 /* Ambient background: shipped work, dimmed and blurred, like a monitor
@@ -76,14 +76,14 @@
     font-size: clamp(2.5rem, 6vw, 4.5rem);
     letter-spacing: -0.02em;
     margin: 0;
-    color: #fffdf5;
+    color: #FFFDF5;
 }
 
 .jobTitle {
     font-family: "Space Grotesk", sans-serif;
     font-weight: 500;
     font-size: clamp(1.1rem, 2.4vw, 1.5rem);
-    color: #f4d35e;
+    color: #F4D35E;
     margin: 12px 0 40px;
 }
 
@@ -103,14 +103,14 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    color: #fffdf5;
+    color: #FFFDF5;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .contactList li a:hover,
 .contactList li a:focus-visible {
-    color: #63a1f7;
+    color: #63A1F7;
 }
 
 .contactList li a svg {
