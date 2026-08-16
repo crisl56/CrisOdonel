@@ -94,9 +94,14 @@ export const projects: Project[] = [
         name: "GUNCH",
         role: "Gameplay & UI Programmer | 2026",
         tags: ["C#", "Unity", "Gameplay Systems", "UI"],
-        thumbnails: [],
+        thumbnails: [
+            "/CrisOdonel/caseStudies/gunch/thumbnails/GUNCHTitle.png",
+        ],
         caseStudy: [],
-        screenshots: [],
+        screenshots: [
+            "/CrisOdonel/caseStudies/gunch/screenshots/gunchGameplay1.jpg",
+            "/CrisOdonel/caseStudies/gunch/screenshots/GUNCHTitle.png",
+        ],
         description: "GUNCH is a single-player 3D first-person shooter centered around a blend of melee and " +
             "ranged combat while going through room to room filled with enemies. You have an experimental Energy Siphoning " +
             "blade attached to your arm that builds your gun’s power gauge, allowing you to make one lethal piercing shot against enemies️. " +
@@ -108,13 +113,21 @@ export const projects: Project[] = [
     {
         id: "nekofish",
         name: "NekoFish",
-        role: "Gameplay & UI Programmer | 2025",
+        role: "PM | Gameplay & UI Programmer | 2025",
         tags: ["C#", "Unity", "Gameplay Systems", "UI"],
         thumbnails: [
-            ""
+            "/CrisOdonel/caseStudies/nekofish/thumbnails/NekoFishPoster.png",
+            "/CrisOdonel/caseStudies/nekofish/thumbnails/Nekofishtitle.png",
+            "/CrisOdonel/caseStudies/nekofish/thumbnails/NekoFishgameplay2.png",
         ],
         caseStudy: [],
-        screenshots: [],
+        screenshots: [
+            "/CrisOdonel/caseStudies/nekofish/screenshots/Nekofishtitle.png",
+            "/CrisOdonel/caseStudies/nekofish/screenshots/NekoFishGameplay.png",
+            "/CrisOdonel/caseStudies/nekofish/screenshots/NekoFishGameplay2.png",
+            "/CrisOdonel/caseStudies/nekofish/screenshots/NekoFishGameplay3.png",
+            "/CrisOdonel/caseStudies/nekofish/screenshots/NekoFishGameplay4.png",
+        ],
         description: "NekoFish is a 3D Unity fishing game where you play as a humanoid cat catching and discovering fish on an island. " +
             "Acquire different rarities and experience many environments during your hunt. Interact and help various NPCs on the island for rewards and story. " +
             "Find and catch the rarest fish of them all, the NekoFish!",
